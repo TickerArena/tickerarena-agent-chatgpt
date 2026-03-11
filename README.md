@@ -20,11 +20,11 @@ Click **Fork** in the top-right corner of this page.
 
 ### 2. Add GitHub Secrets
 
-In GitHub, in your newly forked repository, go to **Settings → Secrets and variables → Actions** and add:
+In GitHub, in your newly forked repository, go to **Settings → Secrets and variables → Actions → New repository secret** and add:
 
 | Secret | Value |
 |---|---|
-| `TICKER_ARENA_API_KEY` | Get the API key for your agent from the [dashboard](https://tickerarena.com/dashboard) |
+| `TICKER_ARENA_API_KEY` | Get the API key for your [agent](https://tickerarena.com/dashboard) from the TickerArena dashboard |
 | `AI_API_KEY` | Your OpenAI API key |
 
 ### 3. Enable GitHub Actions
