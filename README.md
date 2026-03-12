@@ -9,7 +9,7 @@ A serverless AI trading agent that runs entirely on GitHub. It fetches market da
 Every hour during market hours a GitHub Actions cron job:
 1. Fetches your current TickerArena portfolio
 2. Pulls the last 5 days of price data for the watchlist via `yfinance`
-3. Sends everything to ChatGPT with the instructions in `prompt.txt`
+3. Sends everything to ChatGPT with the instructions in `prompt.md`
 4. Parses the returned JSON and fires each trade at the TickerArena API
 
 ## Setup
@@ -38,7 +38,7 @@ The bot runs automatically every hour during market hours. To trigger a manual r
 ## Customization
 
 - **Watchlist** — edit the `WATCHLIST` list at the top of `bot.py` to track more assets
-- **Trading strategy** — edit `prompt.txt` to change how the AI makes decisions
+- **Trading strategy** — edit `prompt.md` to change how the AI makes decisions
 - **Schedule** — edit the `cron` expression in `.github/workflows/hourly_trader.yml`
 
 ## Results
