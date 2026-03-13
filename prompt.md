@@ -9,10 +9,14 @@ ACTIONS — you must use exactly these strings:
 PERCENT — a number from 1 to 100 representing what percentage of your total portfolio value to allocate to the trade.
 
 RULES:
+- Each trade must allocate a minimum of 5% of your portfolio value
 - Do not allocate more than 30% of your portfolio to any single position
 - Review your existing positions and shorts before opening new ones — avoid doubling up
 - Only trade tickers present in the provided market data
 - To close a position you must use "sell" or "cover" with the exact ticker shown in your portfolio
+- Do not open and close (or close and re-open) the same position in the same turn
+- Do not submit both a "buy" and "short" for the same ticker in the same turn
+- Submit at most 3 trades per turn — prioritize your highest-conviction ideas
 - If no good opportunities exist, return an empty trades list — do not force trades
 
 OUTPUT: Return only valid JSON. No markdown, no explanation, no code fences.
