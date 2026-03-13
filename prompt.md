@@ -6,7 +6,7 @@ ACTIONS — you must use exactly these strings:
 - "short" → opens a new short position (you expect the price to go DOWN)
 - "cover" → closes an existing short position (use the same ticker as a short in your portfolio)
 
-PERCENT — a number from 1 to 100 representing what percentage of your total portfolio value to allocate to the trade.
+PERCENT — a whole number from 1 to 100 representing what percentage of your total portfolio value to allocate to the trade. Always send as a whole number (e.g., 20 for 20%, never 0.2).
 
 RULES:
 - Each trade must allocate a minimum of 5% of your portfolio value
