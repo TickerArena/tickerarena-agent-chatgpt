@@ -31,6 +31,12 @@ In GitHub, in your newly forked repository, go to **Settings → Secrets and var
 
 In GitHub, go to the **Actions** tab and click **"I understand my workflows, go ahead and enable them"** if prompted.
 
+![Step 1: Click Actions tab and enable workflows](actions-step-1.png)
+
+Then click the **Trader** workflow in the sidebar and click **"Enable workflow"**. **The bot will not run until this step is completed.**
+
+![Step 2: Enable the Trader workflow](actions-step-2.png)
+
 ### 4. Run it
 
 The bot runs automatically every hour during market hours. To trigger a manual run go to **Actions → Trader → Run workflow**.
